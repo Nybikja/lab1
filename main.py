@@ -21,7 +21,7 @@ class Insect:
 
     def __str__(self):
         return f"name: {self.__name} \nspeed(m/s): {self.__speed} \nweight: {self.__weight} \
-               \ntype: {self.__type} \ncolor: {self.__color} \nage in years: {self.__age}"
+               \ntype: {self.__type} \ncolor: {self.__color} \nage in years: {self.__age} \n"
 
     def __del__(self):
         print("спрацюав деструктор")
@@ -30,19 +30,19 @@ class Insect:
 
 def main():
     obj1 = Insect("цвіркун", 12, 25, "прямокрила", "зелений", 10)
-    print(obj1.__str__() + "\n")
+    print(obj1)
 
     obj2 = Insect("клоп", 6, 60, "напівтвердокрила", "коричневий", 4)
-    print(obj2.__str__() + "\n")
+    print(obj2)
 
     obj3 = Insect("хрущ", 20, 30, "твердокрила", "коричневий", 1)
-    print(obj3.__str__() + "\n")
+    print(obj3)
 
     obj4 = Insect("метелик", 9, 10, "лускокрила", "фіолетовий", 0.5)
-    print(obj4.__str__() + "\n")
+    print(obj4)
 
     obj5 = Insect("бджола", 30, 20, "перетинчастокрилі", "чорно-жовта", 0.09)
-    print(obj5.__str__())
+    print(obj5)
 
     Insect.get_count()
 
